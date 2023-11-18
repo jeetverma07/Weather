@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-image: linear-gradient(
+    to right,
+    rgb(121, 195, 251),
+    rgb(72, 127, 240)
+  );
+  overflow: hidden;
+}
+.container {
+  padding: 5rem;
+  width: 60rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+#search-box,
+.btn {
+  padding: 1rem;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+}
+#search-box {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.69);
+}
+#search-box::placeholder {
+  color: rgba(255, 255, 255, 0.626);
+}
+
+#search-box:focus-visible {
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.626);
+}
+.btn {
+  margin-left: 2rem;
+  background-color: white;
+  color: #2196f3;
+  font-weight: 500;
+  border: 1px solid black;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.95);
+  background-color: rgba(255, 255, 255, 0.316);
+}
+.city {
+  margin: 3rem;
+  color: white;
+  font-size: 4rem;
+}
+.clouds {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #ffffffd2;
+}
+.icon {
+  width: 13rem;
+  height: 13rem;
+}
+.temp {
+  margin: 2rem 0 0 2rem;
+  font-size: 7rem;
+  color: white;
+}
+.last-element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  font-size: 3rem;
+}
+.mtemp {
+  margin-top: 3rem;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+/* Add a vertical line between min and max */
+.vertical-line::after {
+  content: "";
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.516);
+  position: absolute;
+  left: 0;
+  height: 23rem;
+}
+.last-imgs {
+  display: flex;
+  justify-content: space-around;
+}
+.water,
+.wind {
+  width: 11rem;
+  height: 11rem;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 505px) {
+  html {
+    font-size: 40%;
+  }
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 394px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 316px) {
+  html {
+    font-size: 20%;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <input
+          type="text"
+          placeholder="Enter a city name"
+          name="Location"
+          id="search-box"
+        />
+        <button class="btn">Search</button>
+      </form>
+      <h1 class="city">...</h1>
+      <p class="clouds">.</p>
+
+      <img
+        class="icon"
+        src="https://img.icons8.com/color/96/earth-planet--v2.png"
+        alt="earth-planet"
+      />
+
+      <h2 class="temp">00°</h2>
+      <div class="last-element">
+        <p class="mtemp">Humidity</p>
+        <p class="mtemp vertical-line">Wind Speed</p>
+        <p class="clouds min">00°</p>
+        <p class="clouds max">00°</p>
+      </div>
+      <div class="last-imgs">
+        <img
+          class="water"
+          src="https://img.icons8.com/color/96/blur.png"
+          alt="water"
+        />
+        <img
+          class="wind"
+          width="76"
+          height="76"
+          src="https://img.icons8.com/fluency/96/wind.png"
+          alt="wind"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
